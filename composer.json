@@ -1,21 +1,15 @@
 {
   "name": "constantinoricardo/catalog-search-shipping",
-  "description": "N/A",
-  "repositories": [
+  "description": "Show shipping methos",
+  "require": {
+  },
+  "authors": [
     {
-      "type": "vcs",
-      "url":  "git@github.com:constantinoricardo/catalog-search-shipping.git"
+      "name": "Ricardo Constantino Ferreira",
+      "email": "ricardoconstantino30@gmail.com",
+      "role": "Developer"
     }
   ],
-  "config": {
-    "sort-packages": true
-  },
-  "require": {
-    "php": "~7.3.0||~7.4.0",
-    "magento/framework": "103.0.*",
-    "magento/module-backend": "102.0.*",
-    "magento/module-catalog": "100.4.*"
-  },
   "type": "magento2-module",
   "license": [
     "OSL-3.0",
@@ -29,5 +23,5 @@
       "Constantino\\CatalogSearchShipping\\": ""
     }
   },
-  "version": "100.4.0"
+  "version": "1.1.4"
 }
