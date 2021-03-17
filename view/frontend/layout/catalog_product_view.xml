@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="checkout" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="content">
+            <block class="Magento\Catalog\Block\Product\View" name="Constantino.catalog.estimaterate" template="Constantino_CatalogSearchShipping::estimaterate.phtml" cacheable="false">
+                <arguments>
+                    <argument name="view_enable_search" xsi:type="object">Constantino\CatalogSearchShipping\ViewModel\EnableSearch</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+
+        <move element="Constantino.catalog.estimaterate" destination="product.info.form.content" after="-" />
+    </body>
+</page>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <preference for="Constantino\CatalogSearchShipping\Api\QuoteInterface" type="Constantino\CatalogSearchShipping\Model\Quote" />
+
+    <preference for="Constantino\CatalogSearchShipping\Api\SearchShippingsInterface" type="Constantino\CatalogSearchShipping\Model\SearchShippings" />
+
+</config>

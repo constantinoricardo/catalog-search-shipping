@@ -1,0 +1,36 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+$enableSearch = $block->getViewEnableSearch();
+?>
+
+<?php if($enableSearch->isEnabled()): ?>
+<div class="cep-consulting">
+    <h4 class="cep-title"><?php echo __('Find term and shipping value.'); ?></h4>
+    <span class="cep-subtitle"><?php echo __('Inform your zipcode and enjoy the exclusive prices for your region.'); ?></span>
+    <div class="cep-action">
+        <input type="text"
+               name="cep"
+               id="cep"
+               value="00000-000"
+               title="<?= $block->escapeHtmlAttr(__('Inform your zipcode.')) ?>"
+        />
+        <button class="cep-submit" id="getrate" type="button">
+            <span><?php echo __('Calculate') ?></span>
+        </button>
+    </div>
+    <div id="shippings" class="cep-consulting"></div>
+</div>
+<?php endif; ?>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "estimateRate":  []
+        }
+    }
+</script>
+
